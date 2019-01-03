@@ -1,22 +1,40 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import CLayerConfig from './CLayerConfig'
+import CLayerPrice from './CLayerPrice'
+import CLayerVariantSelect from './CLayerVariantSelect'
+import CLayerVariantRadio from './CLayerVariantRadio'
+import CLayerVariantHidden from './CLayerVariantHidden'
+import CLayerAvailabilityMessage from './CLayerAvailabilityMessage'
+import CLayerAvailabilityMessageMinDays from './CLayerAvailabilityMessageMinDays'
+import CLayerAvailabilityMessageMaxDays from './CLayerAvailabilityMessageMaxDays'
+import CLayerAvailabilityMessageShippingMethodName from './CLayerAvailabilityMessageShippingMethodName'
+import CLayerAvailabilityMessageShippingMethodPrice from './CLayerAvailabilityMessageShippingMethodPrice'
+import CLayerAddToBag from './CLayerAddToBag'
+import CLayerShoppingBagItemsCount from './CLayerShoppingBagItemsCount'
+import CLayerShoppingBagSubtotal from './CLayerShoppingBagSubtotal'
+import CLayerShoppingBagShipping from './CLayerShoppingBagShipping'
+import CLayerShoppingBagPayment from './CLayerShoppingBagPayment'
+import CLayerShoppingBagDiscount from './CLayerShoppingBagDiscount'
+import CLayerShoppingBagTaxes from './CLayerShoppingBagTaxes'
+import CLayerShoppingBagTotal from './CLayerShoppingBagTotal'
 
-import styles from './styles.css'
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+export {
+  CLayerConfig,
+  CLayerPrice,
+  CLayerVariantSelect,
+  CLayerVariantRadio,
+  CLayerVariantHidden,
+  CLayerAvailabilityMessage,
+  CLayerAvailabilityMessageMinDays,
+  CLayerAvailabilityMessageMaxDays,
+  CLayerAvailabilityMessageShippingMethodName,
+  CLayerAvailabilityMessageShippingMethodPrice,
+  CLayerAddToBag,
+  CLayerShoppingBagItemsCount,
+  CLayerShoppingBagSubtotal,
+  CLayerShoppingBagShipping,
+  CLayerShoppingBagPayment,
+  CLayerShoppingBagDiscount,
+  CLayerShoppingBagTaxes,
+  CLayerShoppingBagTotal 
 }

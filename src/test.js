@@ -1,7 +1,13 @@
-import ExampleComponent from './'
+import {CLayerConfig,CLayerPrice} from './'
 
-describe('ExampleComponent', () => {
+describe('CLayerConfig', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(CLayerConfig).toBeTruthy()
+  })
+})
+
+describe('CLayerPrice', () => {
+  it('is truthy', () => {
+    expect(CLayerPrice).toBeTruthy()
   })
 })
