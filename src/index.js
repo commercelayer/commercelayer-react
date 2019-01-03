@@ -1,40 +1,55 @@
-import CLayerConfig from './CLayerConfig'
-import CLayerPrice from './CLayerPrice'
-import CLayerVariantSelect from './CLayerVariantSelect'
-import CLayerVariantRadio from './CLayerVariantRadio'
-import CLayerVariantHidden from './CLayerVariantHidden'
-import CLayerAvailabilityMessage from './CLayerAvailabilityMessage'
-import CLayerAvailabilityMessageMinDays from './CLayerAvailabilityMessageMinDays'
-import CLayerAvailabilityMessageMaxDays from './CLayerAvailabilityMessageMaxDays'
-import CLayerAvailabilityMessageShippingMethodName from './CLayerAvailabilityMessageShippingMethodName'
-import CLayerAvailabilityMessageShippingMethodPrice from './CLayerAvailabilityMessageShippingMethodPrice'
-import CLayerAddToBag from './CLayerAddToBag'
-import CLayerShoppingBagItemsCount from './CLayerShoppingBagItemsCount'
-import CLayerShoppingBagSubtotal from './CLayerShoppingBagSubtotal'
-import CLayerShoppingBagShipping from './CLayerShoppingBagShipping'
-import CLayerShoppingBagPayment from './CLayerShoppingBagPayment'
-import CLayerShoppingBagDiscount from './CLayerShoppingBagDiscount'
-import CLayerShoppingBagTaxes from './CLayerShoppingBagTaxes'
-import CLayerShoppingBagTotal from './CLayerShoppingBagTotal'
-
+import Config from './components/Config'
+import Price from './components/Price'
+import VariantSelect from './components/VariantSelect'
+import VariantRadio from './components/VariantRadio'
+import VariantHidden from './components/VariantHidden'
+import AvailabilityMessage from './components/AvailabilityMessage'
+import AvailabilityMessageMinDays from './components/AvailabilityMessageMinDays'
+import AvailabilityMessageMaxDays from './components/AvailabilityMessageMaxDays'
+import AvailabilityMessageShippingMethodName from './components/AvailabilityMessageShippingMethodName'
+import AvailabilityMessageShippingMethodPrice from './components/AvailabilityMessageShippingMethodPrice'
+import AddToBag from './components/AddToBag'
+import ShoppingBagItemsCount from './components/ShoppingBagItemsCount'
+import ShoppingBagSubtotal from './components/ShoppingBagSubtotal'
+import ShoppingBagShipping from './components/ShoppingBagShipping'
+import ShoppingBagPayment from './components/ShoppingBagPayment'
+import ShoppingBagDiscount from './components/ShoppingBagDiscount'
+import ShoppingBagTaxes from './components/ShoppingBagTaxes'
+import ShoppingBagTotal from './components/ShoppingBagTotal'
+import ShoppingBagItems from './components/ShoppingBagItems'
+import ShoppingBagItemImage from './components/ShoppingBagItemImage'
+import ShoppingBagItemName from './components/ShoppingBagItemName'
+import ShoppingBagItemUnitAmount from './components/ShoppingBagItemUnitAmount'
+import ShoppingBagItemQtyContainer from './components/ShoppingBagItemQtyContainer'
+import ShoppingBagItemRemove from './components/ShoppingBagItemRemove'
+import ShoppingBagItemTotalAmount from './components/ShoppingBagItemTotalAmount'
+import Checkout from './components/Checkout'
 
 export {
-  CLayerConfig,
-  CLayerPrice,
-  CLayerVariantSelect,
-  CLayerVariantRadio,
-  CLayerVariantHidden,
-  CLayerAvailabilityMessage,
-  CLayerAvailabilityMessageMinDays,
-  CLayerAvailabilityMessageMaxDays,
-  CLayerAvailabilityMessageShippingMethodName,
-  CLayerAvailabilityMessageShippingMethodPrice,
-  CLayerAddToBag,
-  CLayerShoppingBagItemsCount,
-  CLayerShoppingBagSubtotal,
-  CLayerShoppingBagShipping,
-  CLayerShoppingBagPayment,
-  CLayerShoppingBagDiscount,
-  CLayerShoppingBagTaxes,
-  CLayerShoppingBagTotal 
+  Config,
+  Price,
+  VariantSelect,
+  VariantRadio,
+  VariantHidden,
+  AvailabilityMessage,
+  AvailabilityMessageMinDays,
+  AvailabilityMessageMaxDays,
+  AvailabilityMessageShippingMethodName,
+  AvailabilityMessageShippingMethodPrice,
+  AddToBag,
+  ShoppingBagItemsCount,
+  ShoppingBagSubtotal,
+  ShoppingBagShipping,
+  ShoppingBagPayment,
+  ShoppingBagDiscount,
+  ShoppingBagTaxes,
+  ShoppingBagTotal,
+  ShoppingBagItems,
+  ShoppingBagItemImage,
+  ShoppingBagItemName,
+  ShoppingBagItemUnitAmount,
+  ShoppingBagItemQtyContainer,
+  ShoppingBagItemTotalAmount,
+  ShoppingBagItemRemove,
+  Checkout
 }

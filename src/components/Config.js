@@ -1,11 +1,15 @@
 /**
- * @class CLayerConfig
+ * @class Config
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerConfig extends Component {
+export default class Config extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+  
   static propTypes = {
     baseUrl: PropTypes.string,
     clientId: PropTypes.string,

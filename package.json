@@ -1,10 +1,10 @@
 {
   "name": "commercelayer-react",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "React components for Commerce Layer",
   "author": "fconforti",
   "license": "MIT",
-  "repository": "fconforti/commercelayer-react",
+  "repository": "https://github.com/commercelayer/commercelayer-react",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -57,5 +57,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }

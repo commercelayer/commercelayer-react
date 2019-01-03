@@ -1,65 +1,90 @@
 import React, { Component } from 'react'
 
 import {
-  CLayerConfig,
-  CLayerPrice,
-  CLayerVariantSelect,
-  CLayerVariantRadio,
-  CLayerVariantHidden,
-  CLayerAvailabilityMessage,
-  CLayerAddToBag
+  Config,
+  Price,
+  VariantSelect,
+  AvailabilityMessage,
+  AvailabilityMessageMinDays,
+  AvailabilityMessageMaxDays,
+  AvailabilityMessageShippingMethodName,
+  AvailabilityMessageShippingMethodPrice,
+  AddToBag,
+  ShoppingBagItemsCount,
+  ShoppingBagSubtotal,
+  ShoppingBagShipping,
+  ShoppingBagPayment,
+  ShoppingBagDiscount,
+  ShoppingBagTaxes,
+  ShoppingBagTotal,
+  ShoppingBagItems,
+  ShoppingBagItemImage,
+  ShoppingBagItemName,
+  ShoppingBagItemUnitAmount,
+  ShoppingBagItemQtyContainer,
+  ShoppingBagItemTotalAmount,
+  ShoppingBagItemRemove,
+  Checkout
 } from 'commercelayer-react'
 
-import AvailableMessageTemplate from './components/AvailableMessageTemplate'
-import ShoppingBagSummary from './components/ShoppingBagSummary'
-
 export default class App extends Component {
+
   render () {
     return (
       <div>
-        <CLayerConfig
-          baseUrl="https://static-commerce.commercelayer.io"
-          clientId="351020e9c84f2076755083f08bfe8e47365a76395db1059c3219c37abff86534"
-          marketId="185"
+        <hr/>
+        <Price skuCode="BABYONBU000000FFFFFFNBXX"/>
+        <hr/>
+        <VariantSelect skus={[
+          {code: "BABYONBU000000FFFFFFNBXX", name: "Black Baby Onesie Short Sleeve with White Logo (New born)", label: "New born"},
+          {code: "BABYONBU000000FFFFFF6MXX", name: "Black Baby Onesie Short Sleeve with White Logo (6 Months)", label: "6 Months"},
+          {code: "BABYONBU000000FFFFFF12MX", name: "Black Baby Onesie Short Sleeve with White Logo (12 Months)", label: "12 Months"}]} />
+        <hr/>
+        <AvailabilityMessage
+          availableTemplate={
+            <div>
+              Available in <AvailabilityMessageMinDays />-<AvailabilityMessageMaxDays /> days with <AvailabilityMessageShippingMethodName /> (<AvailabilityMessageShippingMethodPrice/>)
+            </div>
+          }
+          unavailableTemplate={
+            <p>The selected SKU is not available</p>
+          } />
+        <hr/>
+        <AddToBag />
+        <hr/>
+        <ShoppingBagItemsCount />
+        <ShoppingBagSubtotal />
+        <ShoppingBagShipping />
+        <ShoppingBagPayment />
+        <ShoppingBagDiscount />
+        <ShoppingBagTaxes />
+        <ShoppingBagTotal />
+        <hr/>
+        <ShoppingBagItems
+          itemTemplate={
+            <div>
+              <ShoppingBagItemImage />
+              <ShoppingBagItemName />
+              <ShoppingBagItemUnitAmount />
+              <ShoppingBagItemQtyContainer />
+              <ShoppingBagItemRemove />
+              <ShoppingBagItemTotalAmount />
+            </div>
+          }
+        />
+        <hr/>
+        <Checkout/>
+        <hr/>
+        <Config
+          baseUrl="https://dato-commerce.commercelayer.io"
+          clientId="4105df911df6056f8bd9a233ac4edd90c9693fecfc5ecfffcba3e3ae4af45827"
+          marketId="156"
           countryCode="US"
           languageCode="en"
           cartUrl="https://example.com/cart"
           returnUrl="https://example.com/return"
           privacyUrl="https://example.com/privacy"
           termsUrl="https://example.com/terms" />
-        <hr/>
-        <CLayerPrice
-          ContainerTag="span"
-          skuCode="TSHIRTMM000000FFFFFFMXXX"/>
-        <hr/>
-        <CLayerVariantSelect skus={[
-          {code: "XXX", name: "XXX Name", label: "XXX Label"},
-          {code: "YYY", name: "YYY Name", label: "YYY Label"},
-          {code: "ZZZ", name: "ZZZ Name", label: "ZZZ Label"}]} />
-        <hr/>
-        <CLayerVariantRadio skus={[
-          {code: "XXX", name: "XXX Name", label: "XXX Label"},
-          {code: "YYY", name: "YYY Name", label: "YYY Label"},
-          {code: "ZZZ", name: "ZZZ Name", label: "ZZZ Label"}]} />
-        <hr/>
-        <CLayerVariantHidden sku={{code: "XXX", name: "XXX Name", label: "XXX Label"}} />
-        <hr/>
-        <CLayerAvailabilityMessage
-          // ContainerTag="span"
-          // TemplateTag="div"
-          availableTemplate={
-            <AvailableMessageTemplate
-              availableInText="Disponibile in"
-              displayShippingMethodPrice={false} />
-          }
-          unavailableTemplate={
-            <p>The selected SKU is not available</p>
-          } />
-        <hr/>
-        <CLayerAddToBag
-          text="Aggiungi al carrello" />
-        <hr/>
-        <ShoppingBagSummary/>
       </div>
     )
   }

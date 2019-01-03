@@ -1,11 +1,15 @@
 /**
- * @class CLayerPrice
+ * @class Price
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerPrice extends Component {
+export default class Price extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+  
   static propTypes = {
     ContainerTag: PropTypes.oneOf(['div', 'span']),
     AmountTag: PropTypes.oneOf(['div', 'span']),

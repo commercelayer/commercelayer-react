@@ -1,11 +1,15 @@
 /**
- * @class CLayerAvailabilityMessageMinDays
+ * @class AvailabilityMessageMaxDays
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerAvailabilityMessageMinDays extends Component {
+export default class AvailabilityMessageMaxDays extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+    
   static propTypes = {
     ContainerTag: PropTypes.oneOf(['span', 'div'])
   }
@@ -21,7 +25,7 @@ export default class CLayerAvailabilityMessageMinDays extends Component {
     } = this.props
 
     return (
-      <ContainerTag className="clayer-availability-message-available-min-days"></ContainerTag>
+      <ContainerTag className="clayer-availability-message-available-max-days"></ContainerTag>
     )
   }
 }

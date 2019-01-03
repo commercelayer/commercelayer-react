@@ -1,11 +1,15 @@
 /**
- * @class CLayerVariantHidden
+ * @class VariantHidden
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerVariantHidden extends Component {
+export default class VariantHidden extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
   static propTypes = {
     sku: PropTypes.object
   }

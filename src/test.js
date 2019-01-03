@@ -1,13 +1,13 @@
-import {CLayerConfig,CLayerPrice} from './'
+import {Config,Price} from './'
 
-describe('CLayerConfig', () => {
+describe('Config', () => {
   it('is truthy', () => {
-    expect(CLayerConfig).toBeTruthy()
+    expect(Config).toBeTruthy()
   })
 })
 
-describe('CLayerPrice', () => {
+describe('Price', () => {
   it('is truthy', () => {
-    expect(CLayerPrice).toBeTruthy()
+    expect(Price).toBeTruthy()
   })
 })

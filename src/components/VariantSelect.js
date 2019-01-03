@@ -1,11 +1,15 @@
 /**
- * @class CLayerVariantSelect
+ * @class VariantSelect
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerVariantSelect extends Component {
+export default class VariantSelect extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
   static propTypes = {
     skus: PropTypes.array
   }

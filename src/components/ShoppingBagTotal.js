@@ -1,11 +1,15 @@
 /**
- * @class CLayerShoppingBagSubtotal
+ * @class ShoppingBagTotal
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerShoppingBagSubtotal extends Component {
+export default class ShoppingBagTotal extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
   static propTypes = {
     ContainerTag: PropTypes.oneOf(['div', 'span']),
     defaultText: PropTypes.string
@@ -24,7 +28,7 @@ export default class CLayerShoppingBagSubtotal extends Component {
     } = this.props
 
     return (
-      <ContainerTag id="clayer-shopping-bag-subtotal">
+      <ContainerTag id="clayer-shopping-bag-total">
         {defaultText}
       </ContainerTag>
     )

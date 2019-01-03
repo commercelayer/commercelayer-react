@@ -1,11 +1,15 @@
 /**
- * @class CLayerAvailabilityMessageShippingMethodPrice
+ * @class AvailabilityMessageShippingMethodName
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerAvailabilityMessageShippingMethodPrice extends Component {
+export default class AvailabilityMessageShippingMethodName extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+  
   static propTypes = {
     ContainerTag: PropTypes.oneOf(['span', 'div'])
   }
@@ -21,7 +25,7 @@ export default class CLayerAvailabilityMessageShippingMethodPrice extends Compon
     } = this.props
 
     return (
-      <ContainerTag className="clayer-availability-message-available-shipping-method-price"></ContainerTag>
+      <ContainerTag className="clayer-availability-message-available-shipping-method-name"></ContainerTag>
     )
   }
 }

@@ -1,11 +1,15 @@
 /**
- * @class CLayerVariantRadio
+ * @class VariantRadio
  */
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class CLayerVariantRadio extends Component {
+export default class VariantRadio extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
   static propTypes = {
     ContainerTag: PropTypes.oneOf(['div', 'span']),
     RadioContainerTag: PropTypes.oneOf(['div', 'span']),
