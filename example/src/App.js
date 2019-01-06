@@ -50,16 +50,16 @@ export default class App extends Component {
         <CLayer.Checkout/>
         <hr/>
         <CLayer.Config
-          baseUrl="https://dato-commerce.commercelayer.io"
-          clientId="4105df911df6056f8bd9a233ac4edd90c9693fecfc5ecfffcba3e3ae4af45827"
-          marketId="156"
+          baseUrl="https://static-commerce.commercelayer.io"
+          clientId="351020e9c84f2076755083f08bfe8e47365a76395db1059c3219c37abff86534"
+          marketId="185"
           countryCode="US"
           languageCode="en"
           cartUrl="https://example.com/cart"
           returnUrl="https://example.com/return"
           privacyUrl="https://example.com/privacy"
           termsUrl="https://example.com/terms" />
-      </div>
+      </div>      
     )
   }
 }
