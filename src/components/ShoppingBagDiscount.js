@@ -9,7 +9,7 @@ export default class ShoppingBagDiscount extends Component {
   shouldComponentUpdate() {
     return false;
   }
-  
+
   static propTypes = {
     ContainerTag: PropTypes.oneOf(['div', 'span']),
     defaultText: PropTypes.string
@@ -28,7 +28,7 @@ export default class ShoppingBagDiscount extends Component {
     } = this.props
 
     return (
-      <ContainerTag id="clayer-shopping-bag-discount">
+      <ContainerTag className="clayer-shopping-bag-discount">
         {defaultText}
       </ContainerTag>
     )

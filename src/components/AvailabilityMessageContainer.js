@@ -1,35 +1,34 @@
 /**
- * @class ShoppingBagShipping
+ * @class AvailabilityMessageContainer
  */
 
 import React, { Component } from 'react'
+import { renderToString } from 'react-dom/server'
 import PropTypes from 'prop-types'
+import { Template } from '../utils'
 
-export default class ShoppingBagShipping extends Component {
+export default class AvailabilityMessageContainer extends Component {
   shouldComponentUpdate() {
     return false;
   }
 
   static propTypes = {
     ContainerTag: PropTypes.oneOf(['div', 'span']),
-    defaultText: PropTypes.string
+    id: PropTypes.string
   }
 
   static defaultProps = {
-    ContainerTag: "div",
-    defaultText: "0"
+    ContainerTag: "div"
   }
 
   render() {
-
     const {
       ContainerTag,
-      defaultText
+      id
     } = this.props
 
     return (
-      <ContainerTag className="clayer-shopping-bag-shipping">
-        {defaultText}
+      <ContainerTag className="clayer-availability-message-container" id={id}>
       </ContainerTag>
     )
   }

@@ -11,7 +11,9 @@ export default class ShoppingBagItemQtyContainer extends Component {
 
   render() {
     return (
-      <div className="clayer-shopping-bag-item-qty-container"></div>
+      <div className="clayer-shopping-bag-item-qty-container">
+        <span className="clayer-shopping-bag-item-availability-message-container"></span>
+      </div>
     )
   }
 }

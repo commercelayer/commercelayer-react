@@ -9,7 +9,7 @@ export default class Checkout extends Component {
   shouldComponentUpdate() {
     return false;
   }
-  
+
   static propTypes = {
     text: PropTypes.string
   }
@@ -22,7 +22,7 @@ export default class Checkout extends Component {
     } = this.props
 
     return (
-      <a href="#" id="clayer-shopping-bag-checkout">{text}</a>
+      <a href="#" className="clayer-shopping-bag-checkout">{text}</a>
     )
   }
 }

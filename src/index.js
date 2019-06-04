@@ -2,8 +2,9 @@ import Config from './components/Config'
 import Price from './components/Price'
 import VariantSelect from './components/VariantSelect'
 import VariantRadio from './components/VariantRadio'
-import VariantHidden from './components/VariantHidden'
-import AvailabilityMessage from './components/AvailabilityMessage'
+import AvailabilityMessageContainer from './components/AvailabilityMessageContainer'
+import AvailabilityMessageAvailableTemplate from './components/AvailabilityMessageAvailableTemplate'
+import AvailabilityMessageUnavailableTemplate from './components/AvailabilityMessageUnavailableTemplate'
 import AvailabilityMessageMinDays from './components/AvailabilityMessageMinDays'
 import AvailabilityMessageMaxDays from './components/AvailabilityMessageMaxDays'
 import AvailabilityMessageShippingMethodName from './components/AvailabilityMessageShippingMethodName'
@@ -30,8 +31,9 @@ export {
   Price,
   VariantSelect,
   VariantRadio,
-  VariantHidden,
-  AvailabilityMessage,
+  AvailabilityMessageContainer,
+  AvailabilityMessageAvailableTemplate,
+  AvailabilityMessageUnavailableTemplate,
   AvailabilityMessageMinDays,
   AvailabilityMessageMaxDays,
   AvailabilityMessageShippingMethodName,

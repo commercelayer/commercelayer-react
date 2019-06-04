@@ -1,5 +1,5 @@
 {
-  "name": "commercelayer-react-example",
+  "name": "commercelayer-react-example-category-page",
   "homepage": "https://fconforti.github.io/commercelayer-react",
   "version": "0.0.0",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "commercelayer-react": "file:.."
+    "commercelayer-react": "file:../.."
   },
   "scripts": {
     "start": "react-scripts start",

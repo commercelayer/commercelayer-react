@@ -28,7 +28,7 @@ export default class ShoppingBagSubtotal extends Component {
     } = this.props
 
     return (
-      <ContainerTag id="clayer-shopping-bag-subtotal">
+      <ContainerTag className="clayer-shopping-bag-subtotal">
         {defaultText}
       </ContainerTag>
     )

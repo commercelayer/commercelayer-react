@@ -28,7 +28,7 @@ export default class ShoppingBagPayment extends Component {
     } = this.props
 
     return (
-      <ContainerTag id="clayer-shopping-bag-payment">
+      <ContainerTag className="clayer-shopping-bag-payment">
         {defaultText}
       </ContainerTag>
     )

@@ -34,10 +34,10 @@ export default class ShoppingBagItems extends Component {
     return (
       <ContainerTag id="clayer-shopping-bag-container">
         <ItemsContainerTag id="clayer-shopping-bag-items-container">
-          <Template id="clayer-shopping-bag-item-template">
-            { renderToString(itemTemplate) }
-          </Template>
         </ItemsContainerTag>
+        <Template id="clayer-shopping-bag-item-template">
+          { renderToString(itemTemplate) }
+        </Template>
       </ContainerTag>
     )
   }

@@ -8,7 +8,14 @@
 
 ### Getting started
 
-To learn how it works and get started, we recommend you to first check this [tutorial](https://github.com/commercelayer/static-commerce).
+To learn how it works and get started, we recommend you to first check this [tutorial](https://github.com/commercelayer/static-commerce). Then run the following:
+
+1. `cd commercelayer-react`
+2. `npm install`
+3. `npm run start`
+4. `cd examples/<example_dir>`
+5. `npm install`
+6. `npm run start`
 
 **Looking for Gatsby?** Let's check [this one](https://github.com/commercelayer/gatsby-commerce).
 
