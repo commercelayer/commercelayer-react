@@ -1,82 +1,78 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import * as CLayer from 'commercelayer-react'
 
 export default class App extends Component {
 
-  render () {
+  render() {
+    const amountProps = {
+      amount: {
+        className: 'amount-tag'
+      },
+      compare: {
+        className: 'amount-compare'
+      }
+    }
     return (
       <div>
-        <CLayer.Price skuCode="BABYONBU000000FFFFFFNBXX" id="price"/>
+        <CLayer.Price
+          skuCode="BABYONBU000000FFFFFFNBXX"
+          id="price"
+          AmountProps={amountProps}/>
 
         <CLayer.VariantSelect
           PriceContainerId="price"
           AvailabilityMessageContainerId="availability-message"
           AddToBagId="add-to-bag"
-          skus={[{
-                  code: "BABYONBU000000FFFFFFNBXX",
-                  name: "Black Baby Onesie Short Sleeve with White Logo (New born)",
-                  label: "New born"
-                },
-                {
-                  code: "BABYONBU000000FFFFFF6MXX",
-                  name: "Black Baby Onesie Short Sleeve with White Logo (6 Months)",
-                  label: "6 Months"
-                },
-                {
-                  code: "BABYONBU000000FFFFFF12MX",
-                  name: "Black Baby Onesie Short Sleeve with White Logo (12 Months)",
-                  label: "12 Months"
-                }]} />
+          skus={[
+          {
+            code: "BABYONBU000000FFFFFFNBXX",
+            name: "Black Baby Onesie Short Sleeve with White Logo (New born)",
+            label: "New born"
+          }, {
+            code: "BABYONBU000000FFFFFF6MXX",
+            name: "Black Baby Onesie Short Sleeve with White Logo (6 Months)",
+            label: "6 Months"
+          }, {
+            code: "BABYONBU000000FFFFFF12MX",
+            name: "Black Baby Onesie Short Sleeve with White Logo (12 Months)",
+            label: "12 Months"
+          }
+        ]}/>
 
         <hr/>
-        <CLayer.AddToBag id="add-to-bag"
-                         AvailabilityMessageContainerId="availability-message" />
+        <CLayer.AddToBag
+          id="add-to-bag"
+          AvailabilityMessageContainerId="availability-message"/>
 
-        <CLayer.AvailabilityMessageContainer id="availability-message" />
+        <CLayer.AvailabilityMessageContainer id="availability-message"/>
 
         <CLayer.AvailabilityMessageAvailableTemplate
-          availableTemplate={
-            <p>Available in <CLayer.AvailabilityMessageMinDays />-<CLayer.AvailabilityMessageMaxDays /> days with <CLayer.AvailabilityMessageShippingMethodName /> (<CLayer.AvailabilityMessageShippingMethodPrice/>)</p>
-          }
-        />
+          availableTemplate={< p > Available in < CLayer.AvailabilityMessageMinDays /> - <CLayer.AvailabilityMessageMaxDays/>days with < CLayer.AvailabilityMessageShippingMethodName /> (<CLayer.AvailabilityMessageShippingMethodPrice/>) < /p>}/>
         <CLayer.AvailabilityMessageUnavailableTemplate
-          unavailableTemplate={
-            <p>Not Available</p>
-          }
-        />
+          unavailableTemplate={< p > Not Available < /p>}/>
         <hr/>
 
         <dl>
           <dt>Items</dt>
-          <dd><CLayer.ShoppingBagItemsCount /></dd>
+          <dd><CLayer.ShoppingBagItemsCount/></dd>
           <dt>Subtotal</dt>
-          <dd><CLayer.ShoppingBagSubtotal /></dd>
+          <dd><CLayer.ShoppingBagSubtotal/></dd>
           <dt>Shipping</dt>
-          <dd><CLayer.ShoppingBagShipping /></dd>
+          <dd><CLayer.ShoppingBagShipping/></dd>
           <dt>Payment</dt>
-          <dd><CLayer.ShoppingBagPayment /></dd>
+          <dd><CLayer.ShoppingBagPayment/></dd>
           <dt>Discount</dt>
-          <dd><CLayer.ShoppingBagDiscount /></dd>
+          <dd><CLayer.ShoppingBagDiscount/></dd>
           <dt>Taxes</dt>
-          <dd><CLayer.ShoppingBagTaxes /></dd>
+          <dd><CLayer.ShoppingBagTaxes/></dd>
           <dt>Total</dt>
-          <dd><CLayer.ShoppingBagTotal /></dd>
+          <dd><CLayer.ShoppingBagTotal/></dd>
         </dl>
 
         <hr/>
 
         <CLayer.ShoppingBagItems
-          itemTemplate={
-            <div>
-              <CLayer.ShoppingBagItemImage />
-              <CLayer.ShoppingBagItemName />
-              <CLayer.ShoppingBagItemUnitAmount />
-              <CLayer.ShoppingBagItemQtyContainer />
-              <CLayer.ShoppingBagItemRemove />
-              <CLayer.ShoppingBagItemTotalAmount />
-            </div>
-          }
-        />
+          itemTemplate={< div > <CLayer.ShoppingBagItemImage/> < CLayer.ShoppingBagItemName /> <CLayer.ShoppingBagItemUnitAmount/> < CLayer.ShoppingBagItemQtyContainer /> <CLayer.ShoppingBagItemRemove/> < CLayer.ShoppingBagItemTotalAmount /> </div>}/>
 
         <hr/>
 
@@ -93,7 +89,7 @@ export default class App extends Component {
           cartUrl="https://example.com/cart"
           returnUrl="https://example.com/return"
           privacyUrl="https://example.com/privacy"
-          termsUrl="https://example.com/terms" />
+          termsUrl="https://example.com/terms"/>
       </div>
     )
   }
