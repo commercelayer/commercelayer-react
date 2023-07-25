@@ -1,3 +1,6 @@
+> **Warning**<br />
+This library is deprecated and no longer maintained. A brand new Commerce Layer [React Components](https://github.com/commercelayer/commercelayer-react-components) library has been officially released — we strongly recommend you to use that instead.
+
 # Commerce Layer React
 
 > A set of React components that helps you integrate the [Commerce Layer API](https://commercelayer.io/api/reference/) into your React application.
